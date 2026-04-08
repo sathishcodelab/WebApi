@@ -1,0 +1,34 @@
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+
+# ASP.NET runtime
+wwwroot/**/*.log
+
+# Local publish folders
+publish/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local secrets
+secrets.json
+*.userprefs
