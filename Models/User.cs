@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace WebApplication1.Models;
 
 public class User
@@ -18,12 +20,16 @@ public class User
 
 public class UserCreate
 {
+    [Required(AllowEmptyStrings = false)]
+    [EmailAddress]
     public string Email { get; set; } = default!;
     public string Name { get; set; } = default!;
 }
 
 public class UserUpdate
 {
+    [Required(AllowEmptyStrings = false)]
+    [EmailAddress]
     public string Email { get; set; } = default!;
     public string Name { get; set; } = default!;
 }
